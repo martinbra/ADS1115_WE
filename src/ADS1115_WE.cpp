@@ -150,7 +150,12 @@ void ADS1115_WE::startSingleMeasurement(){
 	currentConfReg |= (1 << 15);
 	writeRegister(ADS1115_CONFIG_REG, currentConfReg);
 }
-	
+
+int16_t ADS1115_WE::getResult_Raw(){
+	int16_t rawResult = readRegister(ADS1115_CONV_REG);
+	return rawResult;	
+}
+
 float ADS1115_WE::getResult_V(){
 	int16_t rawResult = readRegister(ADS1115_CONV_REG);
 	float result = (rawResult * 1.0 / ADS1115_REG_FACTOR) * voltageRange/1000;

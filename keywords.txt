@@ -36,6 +36,7 @@ setVoltageRange_mV	KEYWORD2
 setCompareChannels	KEYWORD2
 isBusy	KEYWORD2
 startSingleMeasurement	KEYWORD2
+getResult_Raw	KEYWORD2
 getResult_V	KEYWORD2
 getResult_mV	KEYWORD2
 setAlertPinToConversionReady	KEYWORD2

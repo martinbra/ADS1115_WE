@@ -200,6 +200,7 @@ public:
 
 	bool isBusy();
 	void startSingleMeasurement();
+	int16_t getResult_Raw();
 	float getResult_V();
 	float getResult_mV();
 
